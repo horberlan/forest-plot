@@ -5,19 +5,19 @@ library(meta)
 dat <- read_xlsx("LP.xlsx")
 dat
 dat.frame_2 <- data.frame(dat
-                          )
-dat.frame
+                          )#Precisa criar um "data.frema" para converter os valoes chr presentes nos dados numéricos pra num ou int, removendo então as vírguas.
+
 meta_2 <- metacont(dat$n,
                    dat$meand,
                    dat$sdd,
                    dat$nd,
                    dat$mean,
                    dat$sd,
-                   dat$study,
-                   data = dat.frame_2,
-                   byvar = Measure,
-                   comb.fixed = TRUE,
-                   sm="SMD"
+                   dat$study, #o ultimo import será de valor chr que levará os dados dos autores 
+                   data = dat.frame_2, #aponta para de onde virá os dados da análise
+                   byvar = Measure, #declara qual os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
+                   comb.fixed = TRUE,#para que on números não fiquem randomicos.
+                   sm="SMD" #medida de sumáio usada para agrupar os dados.
                    )
 
 #RE.res <- rma(n,meand,sdd,mean,sd, data=dat.frame_2, slab=paste(Measure))
@@ -27,12 +27,11 @@ png(file = 'LP - Forestplot.png',
     height=800)
 
 forest(meta_2,
-       order=order(dat$study),
+       order=order(dat$study), #ordena a coluna study
        leftlabs = c("Lipid Profile 
                     Author", "Total","Mean","SD","Total","Mean","SD"),
-       comb.random=FALSE,
-       rows=c(1:3, 4:8, 8:10, 11:15, 16:19, 20:23),
-       xlim = c(-10,10),
+       comb.random=FALSE, #impede que os dados se mistures entre os subgrupos
+       xlim = c(-10,10), #escala do eixo X
        xlab="Standarized Mean Difference (95% CI)",
        mlab="RE Model for All Studies",
        subgroup = TRUE,
