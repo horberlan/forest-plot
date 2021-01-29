@@ -5,10 +5,10 @@
 <!--<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A2BWTNETMS4G4NL5LLACRW2C" width="600px"/> -->
 
 * Librarys:
-```Monokai
-library(readxl) #
-library(grid) #
-library(meta) #
+```R
+library(readxl)
+library(grid)
+library(meta)
 ```
 <br>
 * See code:
@@ -17,8 +17,7 @@ library(meta) #
 
 dat <- read_xlsx("LP.xlsx")
 dat
-dat.frame_2 <- data.frame(dat
-                          )#
+dat.frame_2 <- data.frame(dat)
 
 meta_2 <- metacont(dat$n,
                    dat$meand,
@@ -26,9 +25,11 @@ meta_2 <- metacont(dat$n,
                    dat$nd,
                    dat$mean,
                    dat$sd,
-                   as.character(dat$frame), #o ultimo import será de valor chr que levará os dados dos autores 
+                   as.character(dat$frame), 
+                   #o ultimo import será de valor chr que levará os dados dos autores
                    data = dat.frame_2, #aponta para de onde virá os dados da análise
-                   byvar = Measure, #declara qual os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
+                   byvar = Measure, 
+                   #declara qual os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
                    comb.fixed = TRUE,#para que on números não fiquem randomicos.
                    sm="SMD" #medida de sumáio usada para agrupar os dados.
                    )
@@ -43,7 +44,7 @@ forest(meta_2,
        order=order(dat$study), #ordena a coluna study
        leftlabs = c("Lipid Profile 
                     Author", "Total","Mean","SD","Total","Mean","SD"),
-       comb.random=FALSE, #impede que os dados se mistures entre os subgrupos
+       comb.random=FALSE, # Não plota o random efect
        xlim = c(-10,10), #escala do eixo X
        xlab="Standarized Mean Difference (95% CI)",
        mlab="RE Model for All Studies",
