@@ -12,7 +12,9 @@ library(meta) #
 ```
 <br>
 * See code:
+
 ```R
+
 dat <- read_xlsx("LP.xlsx")
 dat
 dat.frame_2 <- data.frame(dat
@@ -49,4 +51,6 @@ forest(meta_2,
        print.byvar = FALSE,
 )
 grid::grid.text("Lipid Profile", 0.5, 0.85, gp = grid::gpar(cex = 1.5))
-dev.off()```
+dev.off()
+
+```
