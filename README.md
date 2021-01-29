@@ -2,7 +2,7 @@
 <p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
 
 * Exemple:
-<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/BP%20-%20Forestplot.png" align="center"/>
+<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A6EYDKU2HU4CRT2TMDACRPFW" align="center"/>
 
 * Librarys:
 ```R
