@@ -41,9 +41,8 @@ View(dat)
 | Study 15 | HDL     | 6  | 42,46  | 2,98 | 6  | 25,67  | 1,16  |
 | Study 16 | HDL     | 6  | 31,37  | 0,82 | 6  | 25,16  | 0,98  |
 
-<br><br><br>
+<br>
 </center>
-
 <br>
 
 * Create a ```data.frame``` and function ```metabin``` of meta package:
