@@ -19,7 +19,8 @@ dat <- read_xlsx("LP.xlsx")
 View(dat)
 ```
 
-
+<center>
+  
 | study    | Measure | nd | meand  | sdd  | n  | mean   | sd    |
 |----------|---------|----|--------|------|----|--------|-------|
 | Study 1  | CT      | 6  | 129,46 | 5,14 | 6  | 144,79 | 11,25 |
@@ -39,7 +40,7 @@ View(dat)
 | Study 15 | HDL     | 6  | 42,46  | 2,98 | 6  | 25,67  | 1,16  |
 | Study 16 | HDL     | 6  | 31,37  | 0,82 | 6  | 25,16  | 0,98  |
 
-
+</center>
 
 <!--<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A2BWTNETMS4G4NL5LLACRW2C" width="600px"/> -->
 
