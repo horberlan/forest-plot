@@ -42,7 +42,7 @@ View(dat)
 
 </center>
 
-<!--<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A2BWTNETMS4G4NL5LLACRW2C" width="600px"/> -->
+<img src="" width="600px"/>
 
 
 <br>
