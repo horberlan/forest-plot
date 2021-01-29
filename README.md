@@ -1,4 +1,4 @@
-<h1 align="center"> Forest Plot in R </h1> 
+<h1 align="center"> Forest Plot in R — Meta analysis </h1> 
 
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
 <p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
@@ -31,7 +31,8 @@ meta_2 <- metacont(dat$n,
                    #o ultimo import será de valor chr que levará os dados dos autores
                    data = dat.frame_2, #aponta para de onde virá os dados da análise
                    byvar = Measure, 
-                   #declara qual os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
+                   #declara qual os subgrupos que vai usar,
+                   #no caso os que foram inseridos na tablea na coluna "Measure".
                    comb.fixed = TRUE,#para que on números não fiquem randomicos.
                    sm="SMD" #medida de sumáio usada para agrupar os dados.
                    )
