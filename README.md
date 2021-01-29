@@ -21,8 +21,8 @@ dat.frame_2 <- data.frame(dat)
 
 meta_2 <- metacont(dat$n,
                    dat$meand,
-                   dat$sdd,
-                   dat$nd,
+                   dat$sdd, # Experimental SD
+                   dat$nd, # N for  Control grup
                    dat$mean,
                    dat$sd,
                    as.character(dat$frame), 
