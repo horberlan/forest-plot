@@ -1,8 +1,8 @@
-<h1 align="center"> Forest Plot in R — Meta analysis<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" align="right" height="40px">
+<h1 align="center"> Forest Plot in R — Meta-Analysis<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" align="right" height="40px">
 </h1>
 
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
-<p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
+<h2 align="center"> Forest Plot - Use  Meta-analysis with subgroups. Using the <a href="https://cran.r-project.org/web/packages/meta/index.html">Meta</a> package R</h2>
 
 * Libraries:
 
@@ -12,7 +12,7 @@ library(grid)
 library(meta)
 ```
 
-* Exemple table:
+*  Import table:
 
 ```R
 
@@ -41,13 +41,12 @@ View(dat)
 | Study 15 | HDL     | 6  | 42,46  | 2,98 | 6  | 25,67  | 1,16  |
 | Study 16 | HDL     | 6  | 31,37  | 0,82 | 6  | 25,16  | 0,98  |
 
+<br><br><br>
 </center>
 
-<img src="" width="600px"/>
-
-
 <br>
-* Code:
+
+* Create a ```data.frame``` and function ```metabin``` of meta package:
 
 ```R
 
@@ -70,10 +69,13 @@ meta_2 <- metacont(dat$n,
                    comb.fixed = TRUE,#para que on números não fiquem randomicos.
                    sm="SMD" #medida de sumáio usada para agrupar os dados.
                    )
+```
+* ### plot ```forest``` and read the comments in the code about the functions used.
 
+```R
 #RE.res <- rma(n,meand,sdd,mean,sd, data=dat.frame_2, slab=paste(Measure))
 #RE.res
-png(file = 'LP - Forestplot.png',
+png(file = 'LP - Forestplot.png', # Save plot as PNG
     width=780,
     height=620)
 
@@ -91,3 +93,18 @@ forest(meta_2,
 dev.off()
 
 ```
+
+- ### Output:
+<center>
+<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png" width="500px" />
+
+###### Forest plot as a result. Source: https://github.com/horberlan/forest-plot/blob/main/LP%20-%20Forestplot.png
+
+
+</center>
+<!--``` SE <- (dat$sd/sqrt(n)) ```
+    -->
+
+<br><br>
+<p align="center">Liked? Get me a Star :star:</p>
+
