@@ -1,5 +1,5 @@
-<h1 align="center"> Forest Plot in R — Meta analysis </h1> 
-
+<h1 align="center"> Forest Plot in R — Meta analysis<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" align="right" height="40px">
+</h1>
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
 <p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
 * Librarys:
