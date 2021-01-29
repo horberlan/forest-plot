@@ -2,10 +2,10 @@
 <p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
 
 * Exemple:
-<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A6EYDKU2HU4CRT2TMDACRPFW" width="600px"/>
+<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png?token=ALEU6A2BWTNETMS4G4NL5LLACRW2C" width="600px"/>
 
 * Librarys:
-```R
+```Monokai
 library(readxl) #
 library(grid) #
 library(meta) #
@@ -18,7 +18,7 @@ library(meta) #
 dat <- read_xlsx("LP.xlsx")
 dat
 dat.frame_2 <- data.frame(dat
-                          )#Precisa criar um "data.frema" para converter os valoes chr presentes nos dados numéricos pra num ou int, removendo então as vírguas.
+                          )#
 
 meta_2 <- metacont(dat$n,
                    dat$meand,
@@ -28,7 +28,7 @@ meta_2 <- metacont(dat$n,
                    dat$sd,
                    as.character(dat$frame), #o ultimo import será de valor chr que levará os dados dos autores 
                    data = dat.frame_2, #aponta para de onde virá os dados da análise
-                   byvar = Measure, #declara qual coluna vamos usar para definir os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
+                   byvar = Measure, #declara qual os subgrupos que vai usar, no caso os que foram inseridos na tablea na coluna "Measure".
                    comb.fixed = TRUE,#para que on números não fiquem randomicos.
                    sm="SMD" #medida de sumáio usada para agrupar os dados.
                    )
@@ -36,8 +36,8 @@ meta_2 <- metacont(dat$n,
 #RE.res <- rma(n,meand,sdd,mean,sd, data=dat.frame_2, slab=paste(Measure))
 #RE.res
 png(file = 'LP - Forestplot.png',
-    width=800,
-    height=800)
+    width=780,
+    height=620)
 
 forest(meta_2,
        order=order(dat$study), #ordena a coluna study
@@ -50,7 +50,6 @@ forest(meta_2,
        subgroup = TRUE,
        print.byvar = FALSE,
 )
-grid::grid.text("Lipid Profile", 0.5, 0.85, gp = grid::gpar(cex = 1.5))
 dev.off()
 
 ```
