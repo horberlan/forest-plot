@@ -98,9 +98,7 @@ dev.off()
 <p align="center">
 <img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png" width="500px" />
 
-<p align="center"><font size="5"> Forest plot as a result. Source: https://github.com/horberlan/forest-plot/blob/main/LP%20-%20Forestplot.png<font>
-</p>
-
+##### <p align="center"> Forest plot as a result. Source: https://github.com/horberlan/forest-plot/blob/main/LP%20-%20Forestplot.png</p>
 
 <!--``` SE <- (dat$sd/sqrt(n)) ```
     -->
