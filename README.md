@@ -3,7 +3,8 @@
 
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
 <p align="center">Forest Plot - Meta analysis with subgroups the "meta" package in R</p>
-* Librarys:
+
+* Libraries:
 
 ```R
 library(readxl)
@@ -46,7 +47,7 @@ View(dat)
 
 
 <br>
-* See code:
+* Code:
 
 ```R
 
