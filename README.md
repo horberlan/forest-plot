@@ -95,13 +95,13 @@ dev.off()
 ```
 
 - ### Output:
-<center>
+<p align="center">
 <img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png" width="500px" />
 
 ###### Forest plot as a result. Source: https://github.com/horberlan/forest-plot/blob/main/LP%20-%20Forestplot.png
+</p>
 
 
-</center>
 <!--``` SE <- (dat$sd/sqrt(n)) ```
     -->
 
