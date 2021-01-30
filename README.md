@@ -66,7 +66,7 @@ meta_2 <- metacont(dat$n,
                    sm="SMD" #summary measure used to group the data. 
                    )
 ```
-* ### plot ```forest``` and read the comments in the code about the functions used.
+* ## plot ```forest``` and read the comments in the code about the functions used.
 
 ```R
 #RE.res <- rma(n,meand,sdd,mean,sd, data=dat.frame_2, slab=paste(Measure))
@@ -92,7 +92,7 @@ dev.off()
 
 - ### Output:
 <p align="center">
-<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png" width="500px" />
+<img src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png" width="700px" />
 
 ##### <p align="center"> Forest plot as a result. Source: https://github.com/horberlan/forest-plot/blob/main/LP%20-%20Forestplot.png</p>
 
