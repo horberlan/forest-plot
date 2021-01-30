@@ -57,7 +57,7 @@ meta_2 <- metacont(dat$n,
                    dat$nd, # N for  Control grup
                    dat$mean,
                    dat$sd,
-                   as.character(dat$frame), 
+                   as.character(dat$study), 
                    #The final import will be of chr value that will take the data of the authors 
                    data = dat.frame_2, #directs where the analysis data will come from. 
                    byvar = Measure, 
