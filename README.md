@@ -66,7 +66,7 @@ meta_2 <- metacont(dat$n,
                    sm="SMD" #summary measure used to group the data. 
                    )
 ```
-* ## plot ```forest``` and read the comments in the code about the functions used.
+*  plot ```forest``` and read the comments in the code about the functions used.
 
 ```R
 #RE.res <- rma(n,meand,sdd,mean,sd, data=dat.frame_2, slab=paste(Measure))
