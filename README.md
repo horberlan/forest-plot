@@ -53,13 +53,13 @@ dat.frame_2 <- data.frame(dat)
 
 meta_2 <- metacont(dat$n,
                    dat$meand,
-                   dat$sdd, # Experimental SD
-                   dat$nd, # N for  Control grup
+                   dat$sdd, # Experimental SD.
+                   dat$nd, # N forControl grup.
                    dat$mean,
                    dat$sd,
                    as.character(dat$study), 
-                   # The final import will be of chr value that will take the data of the authors 
-                   data = dat.frame_2, #directs where the analysis data will come from. 
+                   # The final import will be of chr value that will take the data of the authors.
+                   data = dat.frame_2, # Directs where the analysis data will come from. 
                    byvar = Measure, 
                    # Declares which subgroups you are going to use, in the case of those that were entered in the table in the "Measure" column. 
                    comb.fixed = TRUE,#so the data doesn't get random. 
@@ -76,7 +76,7 @@ png(file = 'LP - Forestplot.png', # Save plot as PNG
     height=620)
 
 forest(meta_2,
-       order=order(dat$study), #Where you should initially order the data. 
+       order=order(dat$study), # Where you should initially order the data. 
        leftlabs = c("Lipid Profile 
                     Author", "Total","Mean","SD","Total","Mean","SD"),
        comb.random=FALSE, # Do not plot the random effect. 
