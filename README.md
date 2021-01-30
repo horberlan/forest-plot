@@ -41,7 +41,6 @@ Output:
 | Study 16 | HDL     | 6  | 31,37  | 0,82 | 6  | 25,16  | 0,98  |
 
 <br>
-</center>
 <br>
 
 * Create a ```data.frame``` and function ```metacont``` of meta package:
@@ -59,13 +58,12 @@ meta_2 <- metacont(dat$n,
                    dat$mean,
                    dat$sd,
                    as.character(dat$frame), 
-                   #o ultimo import será de valor chr que levará os dados dos autores
-                   data = dat.frame_2, #aponta para de onde virá os dados da análise
+                   #The final import will be of chr value that will take the data of the authors 
+                   data = dat.frame_2, #directs where the analysis data will come from. 
                    byvar = Measure, 
-                   #declara qual os subgrupos que vai usar,
-                   #no caso os que foram inseridos na tablea na coluna "Measure".
-                   comb.fixed = TRUE,#para que on números não fiquem randomicos.
-                   sm="SMD" #medida de sumáio usada para agrupar os dados.
+                   #declares which subgroups you are going to use, in the case of those that were entered in the table in the "Measure" column. 
+                   comb.fixed = TRUE,#so the data doesn't get random. 
+                   sm="SMD" #summary measure used to group the data. 
                    )
 ```
 * ### plot ```forest``` and read the comments in the code about the functions used.
@@ -78,15 +76,15 @@ png(file = 'LP - Forestplot.png', # Save plot as PNG
     height=620)
 
 forest(meta_2,
-       order=order(dat$study), #ordena a coluna study
+       order=order(dat$study), #Where you should initially order the data. 
        leftlabs = c("Lipid Profile 
                     Author", "Total","Mean","SD","Total","Mean","SD"),
-       comb.random=FALSE, # Não plota o random efect
-       xlim = c(-10,10), #escala do eixo X
+       comb.random=FALSE, # Do not plot the random effect. 
+       xlim = c(-10,10), 
        xlab="Standarized Mean Difference (95% CI)",
        mlab="RE Model for All Studies",
        subgroup = TRUE,
-       print.byvar = FALSE,
+       print.byvar = FALSE, #Don't print meta_2$$Measure.
 )
 dev.off()
 
