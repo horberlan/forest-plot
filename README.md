@@ -58,12 +58,12 @@ meta_2 <- metacont(dat$n,
                    dat$mean,
                    dat$sd,
                    as.character(dat$study), 
-                   #The final import will be of chr value that will take the data of the authors 
+                   # The final import will be of chr value that will take the data of the authors 
                    data = dat.frame_2, #directs where the analysis data will come from. 
                    byvar = Measure, 
-                   #declares which subgroups you are going to use, in the case of those that were entered in the table in the "Measure" column. 
+                   # Declares which subgroups you are going to use, in the case of those that were entered in the table in the "Measure" column. 
                    comb.fixed = TRUE,#so the data doesn't get random. 
-                   sm="SMD" #summary measure used to group the data. 
+                   sm="SMD" # Summary measure used to group the data. 
                    )
 ```
 *  plot ```forest``` and read the comments in the code about the functions used.
@@ -84,7 +84,7 @@ forest(meta_2,
        xlab="Standarized Mean Difference (95% CI)",
        mlab="RE Model for All Studies",
        subgroup = TRUE,
-       print.byvar = FALSE, #Don't print meta_2$$Measure.
+       print.byvar = FALSE, # Don't print meta_2$$Measure.
 )
 dev.off()
 
