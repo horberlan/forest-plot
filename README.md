@@ -76,16 +76,16 @@ png(file = 'LP - Forestplot.png', # Save plot as PNG
     height=620)
 
 forest(meta_2,
-       order=order(dat$study), # Where you should initially order the data. 
-       leftlabs = c("Lipid Profile 
-                    Author", "Total","Mean","SD","Total","Mean","SD"),
-       comb.random=FALSE, # Do not plot the random effect. 
-       xlim = c(-10,10), 
-       xlab="Standarized Mean Difference (95% CI)",
-       mlab="RE Model for All Studies",
-       subgroup = TRUE,
-       print.byvar = FALSE, # Don't print meta_2$$Measure.
-)
+      order=order(dat$study), # Where you should initially order the data. 
+      leftlabs = c("Lipid Profile 
+      Author", "Total","Mean","SD","Total","Mean","SD"),
+      comb.random=FALSE, # Do not plot the random effect. 
+      xlim = c(-70,70), 
+      xlab="Standarized Mean Difference (95% CI)",
+      mlab="RE Model for All Studies",
+      subgroup = TRUE,
+      print.byvar = FALSE, # Don't print meta_2$$Measure.
+      )
 dev.off()
 
 ```
