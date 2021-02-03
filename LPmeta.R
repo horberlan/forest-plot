@@ -30,7 +30,7 @@ forest(meta_2,
        leftlabs = c("Lipid Profile 
                     Author", "Total","Mean","SD","Total","Mean","SD"),
        comb.random=FALSE,
-       xlim = c(-10,10),
+       xlim = c(-70,70),
        xlab="Standarized Mean Difference (95% CI)",
        mlab="RE Model for All Studies",
        subgroup = TRUE,
