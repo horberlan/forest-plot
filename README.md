@@ -1,4 +1,4 @@
-<h1 align="center"> Forest Plot  — Meta-Analysis with R<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" align="right" height="30px">
+<h1 align="center"> Forest Plot  — Meta-Analysis with Subgroups using R <img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" align="right" height="30px">
 </h1>
 
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
