@@ -21,7 +21,7 @@ View(dat)
 ```
 Output:
 
-| study    | Measure | nd | meand  | sdd  | n  | mean   | sd    |
+| study    | Measure | nd | meand  | sdd  | n  | mean   | sd    | 
 |:--------:|:-------:|:--:|:------:|:----:|:--:|:------:|:-----:|
 | Study 1  | CT      | 6  | 129,46 | 5,14 | 6  | 144,79 | 11,25 |
 | Study 2  | CT      | 6  | 98,42  | 3,28 | 6  | 134,83 | 1,96  |
