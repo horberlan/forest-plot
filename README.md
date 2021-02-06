@@ -21,8 +21,8 @@ library(meta)
 
 ## 1.3 Tables
 
-Importe a table 
 ```R
+# Importe table 
 dat <- read_xlsx("LP.xlsx")
 dat
 ```
@@ -168,9 +168,9 @@ forest(meta_2,
       )
 dev.off()
 ```
-
-![caption for my image](https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png)
-
+<p align="center">
+<img align="center" src="https://raw.githubusercontent.com/horberlan/forest-plot/main/LP%20-%20Forestplot.png">
+</p>
 <br>
 
 # 3. References
