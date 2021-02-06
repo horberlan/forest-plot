@@ -104,6 +104,3 @@ dev.off()
 
  
 <br>
-
-<p align="center">Liked? Get me a Star :star:</p>
-
