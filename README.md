@@ -1,4 +1,4 @@
-# Title:  Forest Plot — Meta-Analysis with Subgroups using R
+# Forest Plot — Meta-Analysis with Subgroups using R
 
 
 [![Meta Rstudio](https://img.shields.io/endpoint?url=https%3A%2F%2Frstudio.github.io%2Frstudio-shields%2Fcategory%2Fmeta.json)](https://community.rstudio.com/c/meta)
