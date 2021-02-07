@@ -176,6 +176,6 @@ dev.off()
 # 3. References
 
   
-  R Core Team. (2017). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. Retrieved from https://www.R-project.org/
+1.  R Core Team. (2017). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. Retrieved from https://www.R-project.org/
 
-  Veroniki AA, Jackson D, Viechtbauer W, Bender R, Bowden J, Knapp G, et al. (2016): Methods to estimate the between-study variance and its uncertainty in meta-analysis. Research Synthesis Methods, 7, 55–79 
+2.  Veroniki AA, Jackson D, Viechtbauer W, Bender R, Bowden J, Knapp G, et al. (2016): Methods to estimate the between-study variance and its uncertainty in meta-analysis. Research Synthesis Methods, 7, 55–79 
