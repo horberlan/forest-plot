@@ -19,7 +19,7 @@ library(meta)
 ```
 
 
-## 1.3 Tables
+## 1.2.1 Tables
 
 ```R
 # Importe table 
